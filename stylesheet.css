@@ -1,0 +1,32 @@
+ul { 
+	text-align: center;
+	list-style-type: none;
+ }
+
+ ul li { 
+margin-top: 30px;
+margin-bottom: 30px;
+ }
+
+ a { background-color: #192DE3;
+ 	color: white;
+ 	box-shadow: 0 5px 0 darkblue;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	padding: 0.5em 1em;
+ }
+
+ a:hover { cursor: pointer;
+color: darkblue;
+background-color: white;
+box-shadow: none;
+ }
+
+h1 { background-color: #F57C06;
+      color: #192DE3;
+      text-align: center;
+ }
+
+img { border-radius: 8px;
+	opacity: 0.8;
+ }
