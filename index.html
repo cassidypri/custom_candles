@@ -1,3 +1,4 @@
+<!-- Button, 12 column, alert, and jumbotron are on this page. The menu bar is applied to every page and the table is on the about page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +10,27 @@
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sandstone/bootstrap.min.css">
-
+<style>
+  
+  .mycolor {
+    background-color: #EEEEEE;
+    border-style: solid;
+    border-width: 1px;
+  }
+  .mycontainer {
+    background-color: #FFFFEE;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+</style>
 </head>
 
 <body>
 	<header>
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <a href="index.html" class="navbar-brand"> CC Candles </a>
+  <a href="index.html" class="navbar-brand active"> CC Candles </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,37 +58,54 @@
     </div>
     </nav>
   </header>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    COVID is still out there! Mask up!
+    <button type="button" class="close" data-dismiss="alert">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 
   <section>
-
-  <h2>Welcome</h2>
-
- 
-    <p>Looking to add a customizable, warm touch to your life? You have come to the right place. We can customize almost any detail to your specific candle.
+ <div class="container mycontainer">
+  <div class="row">
+    <div class="col mycolor">
+    <h2 style="text-align: center; margin-top: 20px;">Welcome</h2>
+</div>
+ <div class="col">
+    <p style="text-align: center; margin-top: 50px;">Looking to add a customizable, warm touch to your life? You have come to the right place. We can customize almost any detail to your specific candle.
     We believe everyone should have a candle that is significant to them and is made to provide 100% satisfaction.
     These candles also make great gifts for friends and family.
     You could go to the store and pick out any old candle, but with these gifts, you are spending time crafting the gift to find something that suits the receiver best. 
     We also provide live online help if you are feeling stuck or are in need of any technical support.</p>
+  </div>
+<div class="col mycolor">
+<img src="images/rove_two_wick_candles.jpg" alt="wickcandles" height="400" width="400">
+</div>
+</div>
+</div>
 
 
-<img src="images/rove_two_wick_candles.jpg" alt="wickcandles" height="400" width="400" class="center">
 
-
-  <h2>One of our fan favorites is customizing photos/names on a candle! People use this for many different things, such as:</h2>
-
-  <ul>
+<div class="jumbotron">
+  <h2 class="display-4">One of our fan favorites is customizing photos/names on a candle! People use this for many different things, such as:</h2>
+<hr class="my-4">
+  <ul class="lead">
     <li>Graduation gifts</li>
+ 
     <li>Memorials</li>
+  
     <li>Birthdays</li>
+   
     <li>Ect.</li>
   </ul>
+</div>
 <img src="images/customized.jpg" alt=customized height=270 width=270 class="center">  
 <img src="images/brianna.jpg" alt=Brianna height=220 width=280 class="center">
 
 
   </section>
   <p id="connect">
-  <a href="about.html"><em>Connecting with us</em></a>
+  <a style="margin-left: 10px;" href="about.html" class="btn btn-primary btn-lg"><em>Connecting with us</em></a>
   </p>
   <footer>
     &copy; 2020 by C.C.
